@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--Pour preciser que notre site est en francais-->
+<html lang="fr-FR">
+	<head>
+		<title>Mon CV en lig ne</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- On ajoute une meta   description qui represente un petit texte qui va etre affiche dans le moteur de recherche(google...) sous le nom de notre site. Et seulement dans le fichier 'index-->
+		<meta name="description" content="Presentation de Samuel Ndoum - CV">
+			<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<!--Entete de page, menu de navigation, pied de page-->
+		<header>
+			<h1>Kevin Samuel Ndoum</h1>
+		</header>
+		<!--Ici nous deroulons notre menu de navigation vers les liens d'autres pages. Phase 1-->
+		<!-- Identification des 'li' avec des attributs 'class' pour le fichier CSS-->
+		<nav>
+			<!-- on cree un 'div' avecc sa classe qui nou permettra a centrer notre menu-->
+			<div class="table">
+				<ul>
+					<li class="menu-ind">
+						<a href="index.html">Accueil</a>
+					</li>
+					<li class="menu-par">
+						<a href="parcours.html">Parcours Scolaire</a>
+					</li>
+					<li class="menu-exp">
+						<a href="experiencesPro.html">Experiences Professionnelles</a>
+					</li>
+					<li class="menu-hob">
+						<a href="hobbies.html">Loisirs</a>
+					</li>
+					<li class="menu-con">
+						<a href="contact.html">Contactez-moi!</a>
+					</li>
+				</ul>
+			</div>	
+		</nav>
+		<!-- 'Article' pour derouler des sections avec 'Section'. Ici nous en avons 4-->
+		<article>
+			<!--Ajout des attributs 'class' pour les identifier independamment-->
+			<section class="Presentation">
+			<!--Et on ajoute un 'div' pour identifier toute la presentation en cas de mise en forme-->
+				<h1>Qui suis-je?</h1>
+				<div class="sec">
+					<div class="left">
+						<img src="imgs/bureau.jpg" alt="Ma photo">
+					</div>
+					<div class="right">
+						<p>Je m'appele Samuel Ndoum, j'ai 23 ans et je vis a Douala</p>
+						<p>Je suis diplome d'un BTS obtenu a l'Institut Universitaire de la Cote</p>
+					</div>
+				</div>
+			</section>
+			<section class="Parcours">
+				<h1>Parcours Scolaire</h1>
+				<div class="sec">
+					<div class="exp">
+						<div class="left">
+							<h3>2017</h3>
+						</div>
+						<div class="right">
+							<h3>BTS en Maintenance des Systemes Informatiques</h3>
+							<p>Obtention d'un BTS specialise dans le domaine de maintenance des systemes informatiques</p>
+						</div>
+					</div>
+					<div class="exp">
+						<div class="left">
+							<h3>2016</h3>
+						</div>
+						<div class="right">
+							<h3>Formation en Anglais</h3>
+							<p>Cours d'anglais effectue pendant 6 mois au BBC Language Centre</p>
+						</div>
+					</div>
+					<div class="exp">
+						<div class="left">
+							<h3>2014</h3>
+						</div>
+						<div class="right">
+							<h3>Obtention du Baccalaureat</h3>
+							<p>Baccalaureat D specialise dans le domaine scientifique</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="Experiences">
+				<h1>Experiences Professionnelles</h1>
+				<div class="sec">
+					<div class="exp">
+						<div class="left">
+							<h3>2018</h3>
+						</div>
+						<div class="right">
+							<h3>Gestion de Pont Bascule</h3>
+							<p>Responsable de la pese sur pont bascule a la CIMAF<br/>
+							au compte de APM Terminals et remplissage des bonds de livraison</p>
+						</div>
+						<div class="exp">
+							<div class="left">
+								<h3>2015</h3>
+							</div>
+							<div class="right">
+								<h3>Stagiaire - Camerounaise Des Eaux --Douala</h3>
+								<p>Etude de la Securite d'un Data Center: Cas de la Camerounaise Des Eaux</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="Competences">
+				<h1>Competences</h1>
+				<div class="sec">
+					<div class="cleft">
+						<div class="sous">
+							<div class="sousleft"><h3>Competences</h3></div>
+							<div class="sousright"><h3>Niveaux</h3></div>
+						</div>
+						<div class="sous">
+							<div class="sousleft"><p>HTML / CSS</p></div>
+							<div class="sousright"><p>EXPERT</p></div>
+						</div>
+						<div class="sous">
+							<div class="sousleft"><p>JAVASCRIPT</p></div>
+							<div class="sousright"><p>EXPERT</p></div>
+						</div>
+					</div>
+					<div class="cright">
+						<div class="sous">
+							<div class="sousleft"><h3>Competences</h3></div>
+							<div class="sousright"><h3>Niveaux</h3></div>
+						</div>
+						<div class="sous">
+							<div class="sousleft"><p>PHP / SQL</p></div>
+							<div class="sousright"><p>AVANCE</p></div>
+						</div>
+						<div class="sous">
+							<div class="sousleft"><p>JAVA</p></div>
+							<div class="sousright"><p>AVANCE</p></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="Recommandations">
+				<h1>Recommandations (A telecharger)</h1>
+				<div class="sec">
+					<div class="reco">
+						<h2>CorrigesSQL</h2>
+						<div class="left">
+						<!--'target="_blank"' afin que le lien s'ouvre dans une nouvelle fenetre-->
+						<a href="corrigesExos.pdf" target="_blank"><img src="imgs/images-1.jpg" alt="cours"></a>
+						</div>
+						<div class="right">
+							<p>Corriges du PDF "Apprendre SQL avec MySQL" ecrit par Christian Soutou</p>
+						</div>
+					</div>
+					<div class="reco">
+						<h2>Application GesCompte</h2>
+						<div class="left">
+							<a href="GesCompte.pdf" target="_blank"><img src="imgs/images-1.jpg" alt="cours"></a>
+						</div>
+						<div class="right">
+						 	<p>Rapport de developpement d'une application de gestion de Compte</p>
+						</div>
+					</div>
+			</section>
+		</article>
+		<footer>
+			  <p>Copyright 2019 Samuel Ndoum - Toute reproduction interdite.</p>
+			  <a href="http://facebook.com" id="fb"></a>
+			  <a href="http://gmail.com" id="gm"></a>
+			  <a href="http://linkedin.com" id="lk"></a>
+		</footer>
+	</body>
+</html>

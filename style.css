@@ -1,0 +1,254 @@
+body{/*changement de la police, de la taille par defaut, 
+	margin et padding 0px afin de faire un reset CSS(reinitialiser la deco automatique des bordures de la page)*/
+	font-family: 'Century Gothic', Calibri, Serif;
+	font-size: 13px;
+	margin:0px;
+	padding: 0px;
+} 
+
+h1{/*la taille du titre, son poids et on le centre*/
+	font-size: 40px;
+	font-weight: normal;
+	text-align: center;
+}
+
+header{/*le header prends une hauteur de 100px de haut*/
+	height: 100px;
+}
+
+footer{/*la hauteur de 80px, la marge interieure haute(padding-top), on le centre, 
+	une couleur de fond, les bordures haut(border-top)*/
+	height: 80px;
+	padding-top: 30px;
+	text-align: center;
+	background-color: #C5C5C5;
+	border-top: 5px solid #AAA;
+	border-bottom: 5px solid #AAA;
+	padding-bottom: 70px;
+
+}
+
+#fb, #gm, #lk{
+	width: 75px;
+	height: 75px;
+	display: inline;
+	position: absolute;
+}
+#fb{
+	background-image: url("imgs/logos-sociaux.jpg");
+	background-position: 0px 0px;
+	left: 450px;	
+}
+#gm{
+	background-image: url("imgs/logos-sociaux.jpg");
+	background-position: 395px 0px;
+	left: 550px;
+}
+#lk{
+	background: url("imgs/logos-sociaux.jpg") -300px -100px;
+	left: 650px;
+}
+
+/*on attaque maintenant nos elements de liste*/
+nav{/*on etends notre menu de navigation sur toute notre page et on lui donne une couleur de fond*/
+	width: 100%;
+	background-color: #424355;
+}
+nav ul{/*on fait un reset a notre marge des elements de liste*/
+	margin: 0px;
+	padding: 0px;
+}
+nav li{/*on enleve les puces devant nos elements de listes, on les place en ligne*/
+	list-style-type: none;
+	float: left;
+}
+nav a{/*on definit un affichage pour chacun, on supprime les traits de soulignement automatique des liens,
+	on ecarte les liens, couleur d'ecriture en blanc, on met en majuscule et on donne la taille des mots*/
+	display: inline-block;
+	text-decoration: none;
+	padding: 20px 30px;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size:15px;
+}
+/*Si un element HTML possede des enfants qui sont flottants en CSS, 
+la hauteur de ces enfants va collapser(=0).
+Pour cela nous devons utiliser un clear fixe en CSS qui equivaut a*/
+.table{/*appiquer un 'display=table a notre 'div' qui va rendre la hauteur au menu
+	un 'margin=0 auto' afin de centrer les elements de notre div*/
+	display: table;
+	margin: 0 auto;
+}
+/*Ici on va ajouter une couleur de fond avec un RGBa pour une transparence et une bordure des que 
+l'utilisateur passe le curseur sur notre element de menu grace a ':hover'*/
+/*Afin de recuperer les memes couleurs, on ecrit nos div a cote de notre menu*/
+
+.Presentation{
+	border-top: 5px solid #4C8;
+	background-color: rgba(64, 200, 130, 0.15);
+	border-bottom: 5px solid #4C8;
+
+}
+.Parcours{
+	border-top: 5px solid #de54d4;
+	background-color: rgba(150, 45, 140, 0.15);
+	border-bottom: 5px solid #de54d4;
+}
+.Experiences{
+	border-top: 5px solid #f1dc4f;
+	background-color: rgba(241, 211, 79, 0.15);
+	border-bottom: 5px solid #f1dc4f;
+}
+.Competences{
+	border-top: 5px solid #0070bb;
+	background-color: rgba(000, 112, 192, 0.15);
+	border-bottom: 5px solid #0070bb;
+}
+.Recommandations{
+	border-top: 5px solid #e44d26;
+	background-color: rgba(228, 77, 38, 0.15);
+	border-bottom: 5px solid #e44d26;
+}
+.Contactez-moi{
+	border-top: 5px solid #e44d26;
+	background-color: rgba(228, 77, 38, 0.15);
+	border-bottom: 5px solid #e44d26;
+}	
+.menu-ind:hover{
+	border-top: 5px solid #4C8;
+	background-color: rgba(64, 200, 130, 0.15);	
+	border-radius: 10px;
+}
+.menu-par:hover{
+	border-top: 5px solid #de54d4;
+	background-color: rgba(70, 170, 80, 0.15);
+	border-radius: 10px;
+}
+.menu-exp:hover{
+	border-top: 5px solid #f1dc4f;
+	background-color: rgba(241, 211, 79, 0.15);
+	border-radius: 10px;
+}
+.menu-hob:hover{
+	border-top: 5px solid #0070bb;
+	background-color: rgba(000, 112, 192, 0.15);
+	border-radius: 10px;
+}
+.menu-con:hover{
+	border-top: 5px solid #e44d26;
+	background-color: rgba(228, 77, 38, 0.15);
+	border-radius: 10px;
+}
+
+
+/*Lorsque l'on survole nos elements du menu, ca fera decaler notre texte de 5px vers le bas
+Par rapport au padding qui est defini en haut on va enlever 5px pour le top en mettant 15px,
+30px pour les cote, 20px pour le bas, et 30px pour l'autre cote; Pour cela on fait:*/
+nav li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+/*Redimensionnement de l'image; hors projet*/
+img{
+	width: 200px;
+	height: 150px;
+	border-radius: 20px;
+}
+/*Pour les 'Sections'*/
+section{/*La taille, la hauteur minimale*/
+	width: 100%;
+	min-height: 300px;
+	padding-bottom: 25px;
+    margin-bottom: 10px;
+ }
+.sec{
+	margin: 0px 10%;
+}
+.left{
+	float: left;
+	width: 30%;
+}
+.right{
+	float: left;
+	width: 70%;
+}
+.cleft, .cright, .sousleft, .sousright{
+	width: 50%;
+	float: left;
+}
+/*Dans la ligne ci-dessus, nos 'div' de section comporte des elements flottants,  or en CSS,
+tout parent non flottants qui possede des elements va collapser(etre =0).
+Pour empecher cela, nous allons utiliser le clear fix CSS, 'Display=table',
+on va appliquer une propriete 'content' et une propriete 'clear' sur le 'div' parent
+qui est , 'sec', 'exp' et 'reco'.  on va les cibler avec le pseudo-elements 'After'
+qui permet d'ajouter des elements a la  fin d'un autre element 'div' */
+.sec::after, .exp::after, .reco::after{
+	content: " ";
+	display: table;
+	clear: both;
+} 
+/*Devoloppement personel*/
+.rouge{
+	border-top: 5px solid #e44d26;
+	background-color: rgba(228, 77, 38, 0.15);
+	margin-bottom: 10px;
+	border-bottom: 5px solid #e44d26;
+	
+}
+.bleu{
+	border-top: 5px solid #0070bb;
+	background-color: rgba(000, 112, 192, 0.15);
+	margin-bottom: 10px;
+	border-bottom: 5px solid #0070bb;
+}
+.vert{
+	border-top: 5px solid #6edf40;
+	background-color: rgba(160, 241, 60, 0.15); 
+	margin-bottom: 10px;
+	border-bottom: 5px solid #6edf40;
+}
+.orange{
+	border-top: 5px solid #f69e30;
+	background-color: rgba(241, 211, 79, 0.15);
+	margin-bottom: 10px;
+	border-bottom: 5px solid #f69e30;
+}
+.belge{
+	border-top: 5px solid #01ac9a;
+	background-color: rgba(66, 190, 110, 0.15);
+	margin-bottom: 10px;
+	border-bottom: 5px solid #01ac9a;
+}
+.jeux-videos{
+	border-top: 5px solid;
+	background-color:;
+	margin-bottom: 10px;
+	border-bottom: 5px solid ;
+}
+.louange{
+	border-top: 5px solid blue;
+	background-color: ;
+	margin-bottom: 10px;
+	border-bottom:5px solid blue;
+}
+/*Partie Responsive Design pour le redimensionnement en rapport avec les appareils mobiles*/
+/*Pour un ecran >ou= a 780px*/
+@media screen and (max-width: 780px){
+	/*on reduit la hauteur du header*/
+	header{
+		height: 50px;
+	}
+	/*La taille de nos titres*/
+	h1{
+		font-size: 28px;
+		margin: 20px 0px 0px 0px;
+	}
+	/*Pour nos elements de menu, on modifie la taille a 12px, un padding*/
+	nav li a{
+		font-size: 12px;
+		padding: 10px;
+	}
+	/*Lorsque l'on fait passer le curseur sur notre titre*/
+	nav li:hover a{
+		padding: 5px 10px 10px 10px;
+	}
+}
